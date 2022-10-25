@@ -1,0 +1,74 @@
+ErrorDocument 403 /404.html
+ErrorDocument 404 /404.html
+
+DirectoryIndex page26058021.html
+
+RewriteEngine On
+
+RewriteCond %{HTTP:X-Forwarded-Proto} =http
+RewriteRule ^(.*)$ https://%{HTTP_HOST}/$1 [R=301,L]
+
+RewriteCond %{REQUEST_FILENAME} /robots.txt
+RewriteCond "%{DOCUMENT_ROOT}/robots_%{HTTP_HOST}.txt" -f
+RewriteRule ^(.*)$ robots_%{HTTP_HOST}.txt [NC,L]
+RewriteRule ^uk$ page26196099.html [NC]
+RewriteRule ^uk/$ page26196099.html [NC]
+
+RewriteRule ^en/about$ page26185460.html [NC]
+RewriteRule ^en/about/$ page26185460.html [NC]
+
+RewriteRule ^touch-panel$ page26128660.html [NC]
+RewriteRule ^touch-panel/$ page26128660.html [NC]
+
+RewriteRule ^en/news$ page26447292.html [NC]
+RewriteRule ^en/news/$ page26447292.html [NC]
+
+RewriteRule ^uk/about$ page26196152.html [NC]
+RewriteRule ^uk/about/$ page26196152.html [NC]
+
+RewriteRule ^uk/news$ page26443327.html [NC]
+RewriteRule ^uk/news/$ page26443327.html [NC]
+
+RewriteRule ^uk/projects$ page26471239.html [NC]
+RewriteRule ^uk/projects/$ page26471239.html [NC]
+
+RewriteRule ^uk/ecoversum$ page26473712.html [NC]
+RewriteRule ^uk/ecoversum/$ page26473712.html [NC]
+
+RewriteRule ^virtue-circle-funding$ page29380495.html [NC]
+RewriteRule ^virtue-circle-funding/$ page29380495.html [NC]
+
+RewriteRule ^uk/community$ page26506663.html [NC]
+RewriteRule ^uk/community/$ page26506663.html [NC]
+
+RewriteRule ^uk/housing$ page26514264.html [NC]
+RewriteRule ^uk/housing/$ page26514264.html [NC]
+
+RewriteRule ^virtue-circle$ page29420172.html [NC]
+RewriteRule ^virtue-circle/$ page29420172.html [NC]
+
+RewriteRule ^uk/volunteering$ page26519752.html [NC]
+RewriteRule ^uk/volunteering/$ page26519752.html [NC]
+
+RewriteRule ^uk/humanitarian$ page26542561.html [NC]
+RewriteRule ^uk/humanitarian/$ page26542561.html [NC]
+
+RewriteRule ^en/projects$ page26559206.html [NC]
+RewriteRule ^en/projects/$ page26559206.html [NC]
+
+RewriteRule ^en/ecoversum$ page26567951.html [NC]
+RewriteRule ^en/ecoversum/$ page26567951.html [NC]
+
+RewriteRule ^virtue-circle-event$ page29495135.html [NC]
+RewriteRule ^virtue-circle-event/$ page29495135.html [NC]
+
+RewriteRule ^ecoversum-contribution$ page29535611.html [NC]
+RewriteRule ^ecoversum-contribution/$ page29535611.html [NC]
+
+RewriteRule ^ecoversum-gathering$ page29536476.html [NC]
+RewriteRule ^ecoversum-gathering/$ page29536476.html [NC]
+
+RewriteRule ^members/ ma_start.html [NC]
+
+RewriteRule ^favicon.ico$ https://static.tildacdn.com/tild3161-3430-4635-b038-396535386131/favicon1.ico [R=302,L]
+
